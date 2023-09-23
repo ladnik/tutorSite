@@ -1,0 +1,77 @@
+/* popcat gif */
+.popcat {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  background: url(assets/popcat_frame0.gif) no-repeat center center;
+  background-size: contain;
+  transform: scaleX(-1);
+}
+
+.popcat:hover {
+  background: url(assets/popcat_trans.gif) no-repeat center center;
+  background-size: contain;
+}
+
+
+/* https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* dark mode switch styling */
+.theme-switch {
+  display: inline-block;
+  position: relative;
+  height: var(--dark_mode_btn_height);
+  width: var(--dark_mode_btn_width);
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: var(--background_cont);
+  cursor: pointer;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: var(--background);
+  bottom: 0.4vw;
+  left: 0.4vw;
+  content: "";
+  position: absolute;
+  transition: .4s;
+  width: var(--dark_mode_btn_radius);
+  height: var(--dark_mode_btn_radius);
+}
+
+input:checked+.slider:before {
+  transform: translateX(var(--dark_mode_btn_radius));
+}
+
+.slider.round {
+  border-radius: var(--dark_mode_btn_width);
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

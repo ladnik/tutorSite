@@ -5,55 +5,88 @@ regarding my tutorial in computer architecture @ TUM
 Inspired by https://home.in.tum.de/~spechto/-->
 
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>ladnik</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <h1>ERA-Tutorium WS 2023/24</h1>
+<head>
+  <title>ladnik</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="containers.css"/>
+  <link rel="stylesheet" href="elements.css" />
+  <script src="script.js" async></script>
+</head>
 
-    <hr />
-    <h3>Zeitplan/Raum:</h3>
-    <hr />
-    <br />
-    <br />
-
-    <div class="container-main">
-      <div class="container-left">
-        <h2>📘 <span style="text-decoration: underline">Notizen</span></h2>
-        <a href="notes/lorem_ipsum.txt">this is a note</a>
-        <a href="notes/lorem_ipsum.txt">this is the same note</a>
-        <a href="notes/lorem_ipsum.txt">third time's a charm</a>
-        <br />
-        <a href="notes/lorem_ipsum.txt">now in another week</a>
-        <br />
-        <h2>
-          📌 <span style="text-decoration: underline">sonstige Unterlagen</span>
-        </h2>
-        <a
-          href="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQdAnprsidzbOSZ4jI1SvcFeIEuFKwBLrILGo8tLCEA4ixMzfxUQfk6onBDhipea4sD"
-          >hey!</a
-        >
-      </div>
-
-      <div class="container-right">
-        <div class="popcat"></div>
-      </div>
-      <div style="clear: both"></div>
+<body>
+  <div class="container-top">
+    <div class="container-top-left">
+      <h1>ERA-Tutorium WS 2023/24</h1>
     </div>
+    <div class="container-top-right">
+      <div class="theme-switch" id="dark-mode-toggle">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+  </div>
 
-    <div class="footer">
-      <a href="mailto:niklas.ladurner@tum.de" class="footer_link" id="mail"
-        >Mail</a
-      >
+
+
+
+  <hr />
+  <h3>Zeitplan/Raum:</h3>
+  <hr />
+  <br />
+  <br />
+
+  <div class="container-main">
+    <div class="container-left">
+      <h2>📘 <span style="text-decoration: underline">Notizen</span></h2>
+      <a href="notes/lorem_ipsum.txt">this is a note</a>
+      <a href="notes/lorem_ipsum.txt">this is the same note</a>
+      <a href="notes/lorem_ipsum.txt">third time's a charm</a>
+      <br />
+      <a href="notes/lorem_ipsum.txt">now in another week</a>
+      <br />
+      <h2>
+        📌 <span style="text-decoration: underline">sonstige Unterlagen</span>
+      </h2>
       <a
-        href="https://github.com/ladnik/tutorSite/issues"
-        class="footer_link"
-        id="github"
-        >GitHub</a
-      >
+        href="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQdAnprsidzbOSZ4jI1SvcFeIEuFKwBLrILGo8tLCEA4ixMzfxUQfk6onBDhipea4sD">hey!</a>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+        dolor sit amet.
+
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+        feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+        delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+        commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+        luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+      </p>
     </div>
-  </body>
+
+    <div class="container-right">
+      <div class="popcat"></div>
+    </div>
+    <div style="clear: both"></div>
+  </div>
+
+  <div class="footer">
+    <a href="mailto:niklas.ladurner@tum.de" class="footer_link" id="mail">Mail</a>
+    <a href="https://github.com/ladnik/tutorSite/issues" class="footer_link" id="github">GitHub</a>
+  </div>
+</body>
+
 </html>

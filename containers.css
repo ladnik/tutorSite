@@ -1,0 +1,48 @@
+/* styling for container on top */
+.container-top {
+    width: 100%;
+    overflow: hidden;
+    outline: 3px solid red;
+    display: flex;
+}
+
+/* container containing heading */
+.container-top-left {
+    /* float: left; */
+    /* float: left; */
+    width: 80%;
+    outline: 3px solid blue;
+}
+
+.container-top-right {
+    /* float: right; */
+    width: 20%;
+    outline: 3px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* styling for main container */
+.container-main {
+    width: 100%;
+}
+
+/* styling for left container */
+.container-left {
+    float: left;
+    width: 75%;
+    /* box-sizing: border-box;
+    border: 5px solid blue; */
+}
+
+/* styling for right container */
+.container-right {
+    float: right;
+    width: 25%;
+    /* box-sizing: border-box;
+    border: 5px solid green; */
+}

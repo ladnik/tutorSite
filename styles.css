@@ -8,8 +8,23 @@
   --highlight: #a3cef1;
   */
   --background: #ffffff;
-  --background_cont: #545e75;
+  --background_cont: grey;
   --primary: #000000;
+  --secondary: #273b09;
+  --highlight: #968080;
+  --accent1: #457b9d;
+  --accent2: #1d3557;
+
+  --dark_mode_btn_width: 6vw;
+  --dark_mode_btn_height: 3.4vw;
+  --dark_mode_btn_radius: 2.6vw;
+}
+
+/* set variables for dark mode */
+[data-theme="dark"] {
+  --background: #121212;
+  --background_cont: #1B1B1B;
+  --primary: #ffffff;
   --secondary: #273b09;
   --highlight: #968080;
   --accent1: #457b9d;
@@ -22,39 +37,21 @@ body {
   margin-right: 50px;
   background-color: var(--background);
   font-family: "Arial";
+  font-size: 1em;
+  color: var(--primary);
 }
 
-/* styling for main container */
-.container-main {
-  width: 100%;
-}
-/* styling for left container */
-.container-left {
-  float: left;
-  width: 75%;
-  /* box-sizing: border-box;
-  border: 5px solid blue; */
-}
-/* styling for right container */
-.container-right {
-  float: right;
-  width: 25%;
-  /* box-sizing: border-box;
-  border: 5px solid green; */
-}
 
 /* styling for the main title */
 h1 {
   margin-top: 50px;
-  font-size: 3em;
-  color: var(--primary);
+  font-size: 5vw;
 }
 
 /* styling for the section titles */
 h2 {
   margin-top: 20px;
-  font-size: 2em;
-  color: var(--primary);
+  font-size: 2vw;
 }
 
 /* styling for room info */
@@ -71,29 +68,14 @@ hr {
 /* styling for each link element */
 a {
   margin-right: 50px;
-  font-size: 1.25em;
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 /* a:visited{
   color: var(--highlight);
 } */
 
-/* popcat gif */
-.popcat {
-  width: 100%;
-  height: 100%;
-  min-height: 280px;
-  background: url(assets/popcat_frame0.gif) no-repeat center center;
-  background-size: contain;
-  transform: scaleX(-1);
-}
-
-.popcat:hover {
-  background: url(assets/popcat_trans.gif) no-repeat center center;
-  background-size: contain;
-}
 
 /* styling for the footer */
 .footer {
@@ -103,6 +85,16 @@ a {
   width: 100%;
   padding: 20px 0px 20px 0px;
   text-align: right;
+
+
+  /* styling for the footer 'buttons' */
+  #mail {
+    background: var(--accent1);
+  }
+
+  #github {
+    background-color: var(--accent2);
+  }
 }
 
 .footer a {
@@ -112,25 +104,4 @@ a {
   margin-right: 10px;
   text-decoration: none;
   color: var(--background);
-}
-
-/* styling for the footer 'buttons' */
-#mail {
-  background: var(--accent1);
-}
-
-#github {
-  background-color: var(--accent2);
-}
-
-/* https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
-/* Hide scrollbar for Chrome, Safari and Opera */
-*::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-* {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }

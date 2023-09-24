@@ -12,12 +12,19 @@
   --primary: #000000;
   --secondary: #273b09;
   --highlight: #968080;
-  --accent1: #457b9d;
-  --accent2: #1d3557;
+  --accent1: #E8871E;
+  --accent2: #EDB458;
+  --accent3: #6BBF59;
+  --accent4: #2E86AB;
+  --accent5: #EF626C;
 
-  --dark_mode_btn_width: 6vw;
-  --dark_mode_btn_height: 3.4vw;
-  --dark_mode_btn_radius: 2.6vw;
+  --dark_mode_btn_width: clamp(60px, 6vw, 75px);
+  --dark_mode_btn_height: clamp(34px, 3.4vw, 42.5px);
+  --dark_mode_btn_radius: clamp(26px, 2.6vw, 32.5px);
+
+  --font_heading: clamp(2.5em, 5vw, 3.5em);
+  --font_section: clamp(1.5em, 2vw, 3em);
+  --font_text: clamp(0.75em, 1.5vw, 1.5em);
 }
 
 /* set variables for dark mode */
@@ -33,25 +40,26 @@
 
 /* styling for the whole body */
 body {
-  margin-left: 50px;
-  margin-right: 50px;
+  width: clamp(0px, 95vw, 1300px);
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--background);
   font-family: "Arial";
-  font-size: 1em;
   color: var(--primary);
+  font-size: var(--font_text);
 }
 
 
 /* styling for the main title */
 h1 {
   margin-top: 50px;
-  font-size: 5vw;
+  font-size: var(--font_heading);
 }
 
 /* styling for the section titles */
 h2 {
   margin-top: 20px;
-  font-size: 2vw;
+  font-size: var(--font_section);
 }
 
 /* styling for room info */
@@ -77,31 +85,42 @@ a {
 } */
 
 
-/* styling for the footer */
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 20px 0px 20px 0px;
-  text-align: right;
-
-
-  /* styling for the footer 'buttons' */
-  #mail {
-    background: var(--accent1);
-  }
-
-  #github {
-    background-color: var(--accent2);
-  }
+/* styling for the footer buttons */
+button {
+  padding: 1vw;
+  margin: 1vw;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  color: var(--primary)
 }
 
-.footer a {
-  background: var(--background_cont);
-  padding: 10px;
-  border-radius: 15px;
-  margin-right: 10px;
-  text-decoration: none;
-  color: var(--background);
+#moodle {
+  background: var(--accent3);
+  border: none;
+}
+
+#moodle:hover {
+  background: var(--background);
+  outline: 2px solid var(--accent3);
+}
+
+#github {
+  background: var(--accent2);
+  border: none;
+}
+
+#github:hover {
+  background: var(--background);
+  outline: 2px solid var(--accent2);
+}
+
+#mail {
+  background: var(--accent1);
+  border: none;
+}
+
+#mail:hover {
+  background: var(--background);
+  outline: 2px solid var(--accent1);
 }

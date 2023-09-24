@@ -54,11 +54,11 @@
 }
 
 .slider:before {
+  position: absolute;
   background-color: var(--background);
   bottom: 0.4vw;
   left: 0.4vw;
   content: "";
-  position: absolute;
   transition: .4s;
   width: var(--dark_mode_btn_radius);
   height: var(--dark_mode_btn_radius);

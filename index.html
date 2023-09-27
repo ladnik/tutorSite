@@ -10,9 +10,9 @@ Inspired by https://home.in.tum.de/~spechto/-->
   <title>ladnik</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="containers.css"/>
-  <link rel="stylesheet" href="elements.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/containers.css" />
+  <link rel="stylesheet" href="css/elements.css" />
   <script src="script.js" async></script>
 </head>
 
@@ -42,7 +42,7 @@ Inspired by https://home.in.tum.de/~spechto/-->
 
   <div class="container-center">
     <div class="container-center-left">
-      <h2>📘 <span style="text-decoration: underline">Notizen</span></h2>
+      <h2><!-- 📘  --><span style="text-decoration: underline">Notizen</span></h2>
       <a href="notes/lorem_ipsum.txt">this is a note</a>
       <a href="notes/lorem_ipsum.txt">this is the same note</a>
       <a href="notes/lorem_ipsum.txt">third time's a charm</a>
@@ -50,7 +50,7 @@ Inspired by https://home.in.tum.de/~spechto/-->
       <a href="notes/lorem_ipsum.txt">now in another week</a>
       <br />
       <h2>
-        📌 <span style="text-decoration: underline">sonstige Unterlagen</span>
+        <!-- 📌  --><span style="text-decoration: underline">sonstige Unterlagen</span>
       </h2>
       <a
         href="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQdAnprsidzbOSZ4jI1SvcFeIEuFKwBLrILGo8tLCEA4ixMzfxUQfk6onBDhipea4sD">hey!</a>
@@ -84,9 +84,9 @@ Inspired by https://home.in.tum.de/~spechto/-->
   </div>
 
   <div class="container-bottom">
-    <button onclick="window.location.href='https://www.moodle.tum.de/my/';" id="moodle">Moodle</button>
-    <button onclick="window.location.href='https://github.com/ladnik/tutorSite/issues';" id="github">GitHub</button>
-    <button onclick="window.location.href='mailto:niklas.ladurner@tum.de';" id="mail">Mail</button>
+    <a href="https://www.moodle.tum.de/my/" id="moodle">Moodle </a>
+    <a href="https://github.com/ladnik/tutorSite/issues" id="github">GitHub </a>
+    <a href="mailto:niklas.ladurner@tum.de" id="mail">Mail </a>
   </div>
 </body>
 

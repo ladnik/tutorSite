@@ -1,31 +1,26 @@
 /* styling for container on top */
 .container-top {
-    outline: 3px solid red;
     display: flex;
 }
 
 /* containing heading */
 .container-top-left {
-    width: 80%;
-    outline: 3px solid blue;
+    width: 90%;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 /* containing dark mode button */
 .container-top-right {
-    width: 20%;
-    outline: 3px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-
-
 /* styling for main container */
 .container-center {
-    outline: 3px dotted blue;
-    display:flex;
+    display: flex;
 }
 
 /* styling for left container */
@@ -36,28 +31,27 @@
 /* styling for right container */
 .container-center-right {
     width: 25%;
-    outline: 5px dotted gray;
 }
 
 
 /* styling for the footer */
 .container-bottom {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 20px 0px 20px 0px;
-    text-align: right;
+    /* position: fixed;
+    bottom: 0; */
+    width: var(--body_width);
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
+}
 
-  }
-  
-  .container-bottom a {
-    background: var(--background_cont);
+.container-bottom a {
     padding: 10px;
-    border-radius: 15px;
-    margin-right: 10px;
+    margin: clamp(10px, 7vw, 30px) clamp(10px, 7vw, 30px) 0px;
     text-decoration: none;
-    color: var(--background);
-  }
+    color: var(--primary);
+}
+
+.container-bottom a:hover {
+    cursor: default;
+    text-decoration: underline;
+}

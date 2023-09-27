@@ -22,15 +22,18 @@
   --dark_mode_btn_height: clamp(34px, 3.4vw, 42.5px);
   --dark_mode_btn_radius: clamp(26px, 2.6vw, 32.5px);
 
-  --font_heading: clamp(2.5em, 5vw, 3.5em);
+  --font_heading: clamp(2.5em, 4vw, 3.5em);
   --font_section: clamp(1.5em, 2vw, 3em);
   --font_text: clamp(0.75em, 1.5vw, 1.5em);
+
+  --body_width: clamp(0px, 80vw, 1200px);
 }
 
 /* set variables for dark mode */
 [data-theme="dark"] {
   --background: #121212;
-  --background_cont: #1B1B1B;
+  --background_cont: #272727;
+  /* --background_cont: #1B1B1B; */
   --primary: #ffffff;
   --secondary: #273b09;
   --highlight: #968080;
@@ -40,7 +43,7 @@
 
 /* styling for the whole body */
 body {
-  width: clamp(0px, 95vw, 1300px);
+  width: var(--body_width);
   margin-left: auto;
   margin-right: auto;
   background-color: var(--background);
@@ -52,7 +55,7 @@ body {
 
 /* styling for the main title */
 h1 {
-  margin-top: 50px;
+  /* margin-top: clamp(10px, 2vw, 50px); */
   font-size: var(--font_heading);
 }
 
@@ -80,47 +83,10 @@ a {
   color: var(--primary);
 }
 
+a:hover{
+  text-decoration: underline;
+}
+
 /* a:visited{
   color: var(--highlight);
 } */
-
-
-/* styling for the footer buttons */
-button {
-  padding: 1vw;
-  margin: 1vw;
-  border-radius: 15px;
-  border: none;
-  text-align: center;
-  color: var(--primary)
-}
-
-#moodle {
-  background: var(--accent3);
-  border: none;
-}
-
-#moodle:hover {
-  background: var(--background);
-  outline: 2px solid var(--accent3);
-}
-
-#github {
-  background: var(--accent2);
-  border: none;
-}
-
-#github:hover {
-  background: var(--background);
-  outline: 2px solid var(--accent2);
-}
-
-#mail {
-  background: var(--accent1);
-  border: none;
-}
-
-#mail:hover {
-  background: var(--background);
-  outline: 2px solid var(--accent1);
-}

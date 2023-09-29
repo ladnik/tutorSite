@@ -24,7 +24,7 @@
 
   --font_heading: clamp(2.5em, 4vw, 3.5em);
   --font_section: clamp(1.5em, 2vw, 3em);
-  --font_text: clamp(0.75em, 1.5vw, 1.5em);
+  --font_text: clamp(0.75em, 1.75vw, 2.5em);
 
   --body_width: clamp(0px, 80vw, 1200px);
 }
@@ -33,7 +33,6 @@
 [data-theme="dark"] {
   --background: #121212;
   --background_cont: #272727;
-  /* --background_cont: #1B1B1B; */
   --primary: #ffffff;
   --secondary: #273b09;
   --highlight: #968080;
@@ -77,16 +76,6 @@ hr {
 }
 
 /* styling for each link element */
-a {
-  margin-right: 50px;
-  text-decoration: none;
-  color: var(--primary);
-}
-
-a:hover{
-  text-decoration: underline;
-}
-
 /* a:visited{
   color: var(--highlight);
 } */

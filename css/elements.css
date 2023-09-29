@@ -50,7 +50,7 @@
   transition: .4s;
 }
 
-input:checked+.slider:before {
+input:checked+.slider:before/* , .slider.checked:before */ {
   transform: translateX(var(--dark_mode_btn_radius));
 }
 
@@ -108,3 +108,28 @@ input:checked+.slider:before {
   background: var(--background);
   outline: 2px solid var(--accent1);
 } */
+
+/* .link-container {
+} */
+
+/* styling for the links in the different sections */
+.link-container a{
+  margin-right: 50px;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.link-container a:hover {
+  text-decoration: underline;
+}
+
+.container-bottom a {
+  padding: 10px;
+  margin: clamp(10px, 7vw, 30px) clamp(10px, 7vw, 30px) 0px;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.container-bottom a:hover {
+  text-decoration: underline;
+}

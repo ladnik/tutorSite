@@ -34,6 +34,7 @@
 }
 
 
+
 /* styling for the footer */
 .container-bottom {
     /* position: fixed;
@@ -42,16 +43,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container-bottom a {
-    padding: 10px;
-    margin: clamp(10px, 7vw, 30px) clamp(10px, 7vw, 30px) 0px;
-    text-decoration: none;
-    color: var(--primary);
-}
-
-.container-bottom a:hover {
-    cursor: default;
-    text-decoration: underline;
 }

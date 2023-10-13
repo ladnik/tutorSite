@@ -18,13 +18,13 @@
   --accent4: #2E86AB;
   --accent5: #EF626C;
 
-  --dark_mode_btn_width: clamp(60px, 6vw, 75px);
-  --dark_mode_btn_height: clamp(34px, 3.4vw, 42.5px);
-  --dark_mode_btn_radius: clamp(26px, 2.6vw, 32.5px);
+  --dark_mode_btn_width: clamp(30px, 12vw, 75px);
+  --dark_mode_btn_height: clamp(17px, 6.8vw, 42.5px);
+  --dark_mode_btn_radius: clamp(13px, 5.2vw, 32.5px);
 
-  --font_heading: clamp(2.5em, 4vw, 3.5em);
-  --font_section: clamp(1.5em, 2vw, 3em);
-  --font_text: clamp(0.75em, 1.75vw, 2.5em);
+  --font_heading: clamp(15px, 5vw, 75px);
+  --font_section: clamp(10px, 3vw, 30px);
+  --font_text: clamp(7.5px, 2vw, 25px);
 
   --body_width: clamp(0px, 80vw, 1200px);
 }

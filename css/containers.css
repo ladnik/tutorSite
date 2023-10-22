@@ -21,7 +21,7 @@
 /* styling for main container */
 .container-center {
     display: flex;
-    min-height: 50vh;
+    min-height: 55vh;
 }
 
 /* styling for left container */

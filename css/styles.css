@@ -24,7 +24,7 @@
 
   --font_heading: clamp(15px, 5vw, 75px);
   --font_section: clamp(10px, 3vw, 30px);
-  --font_text: clamp(7.5px, 2vw, 25px);
+  --font_text: clamp(7.5px, 2vw, 20px);
 
   --body_width: clamp(0px, 80vw, 1200px);
 }

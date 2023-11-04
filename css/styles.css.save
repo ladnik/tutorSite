@@ -49,6 +49,7 @@ body {
   font-family: "Arial";
   color: var(--primary);
   font-size: var(--font_text);
+
 }
 
 
@@ -76,7 +77,6 @@ hr {
 }
 
 /* styling for each link element */
-a{
-  padding-top: 10px;
-  padding-right: 10px;
-}
+/* a:visited{
+  color: var(--highlight);
+} */

@@ -22,9 +22,9 @@
   --dark_mode_btn_height: clamp(17px, 6.8vw, 42.5px);
   --dark_mode_btn_radius: clamp(13px, 5.2vw, 32.5px);
 
-  --font_heading: clamp(15px, 5vw, 75px);
-  --font_section: clamp(10px, 3vw, 30px);
-  --font_text: clamp(7.5px, 2vw, 20px);
+  --font_heading: clamp(15px, 10vw, 75px);
+  --font_section: clamp(10px, 7vw, 30px);
+  --font_text: clamp(7.5px, 4.5vw, 20px);
 
   --body_width: clamp(0px, 80vw, 1200px);
 }

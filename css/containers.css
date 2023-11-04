@@ -13,7 +13,7 @@
 /* containing dark mode button */
 .container-top-right {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -21,17 +21,21 @@
 /* styling for main container */
 .container-center {
     display: flex;
+    /* change this to row for split containers left/right*/
+    flex-direction: column;
     min-height: 55vh;
 }
 
 /* styling for left container */
 .container-center-left {
-    width: 75%;
+    /* width: 75%; */
+    /* min-height: 55vh; */
 }
 
 /* styling for right container */
 .container-center-right {
-    width: 25%;
+    /* width: 25%; */
+    height: 20vh;
 }
 
 

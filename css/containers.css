@@ -1,34 +1,28 @@
 /* styling for container on top */
 .container-top {
     display: flex;
-    flex-direction: column;
-}
-
-/* containing header top*/
-.container-top-top {
-    display: flex;
     flex-direction: row;
 }
 
 /* containing heading */
-.container-top-top-left {
+.container-top-left {
     width: 90%;
     /* justify-content: center;
     align-items: center; */
 }
 
 /* containing dark mode button */
-.container-top-top-right {
+.container-top-right {
     display: flex;
     /* justify-content: center; */
     align-items: center;
 }
 
 /* containing header bottom */
-.container-top-bottom {
+/* .container-top-bottom {
     display: flex;
     align-items: center;
-}
+} */
 
 
 /* styling for main container */

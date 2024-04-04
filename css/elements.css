@@ -33,7 +33,7 @@
 }
 
 .slider {
-  display:inline-block;
+  display: inline-block;
   width: var(--dark_mode_btn_radius);
   height: var(--dark_mode_btn_radius);
   background-color: var(--background_cont);
@@ -49,7 +49,10 @@
   transition: .4s;
 }
 
-input:checked+.slider:before/* , .slider.checked:before */ {
+input:checked+.slider:before
+
+/* , .slider.checked:before */
+  {
   transform: translateX(var(--dark_mode_btn_radius));
 }
 
@@ -67,52 +70,32 @@ input:checked+.slider:before/* , .slider.checked:before */ {
   margin-left: calc(var(--dark_mode_btn_radius)/5);
 }
 
-
-/* styling for the footer "buttons" */
+/* styling for buttons */
 /* button {
-  padding: 1vw;
-  margin: 1vw;
-  border-radius: 15px;
+  padding: 0.5vw;
+  margin: 0.5vw;
   border: none;
   text-align: center;
+  background-color: var(--background);
+  font-size: var(--font_text);
   color: var(--primary)
 } */
 
-/* #moodle {
-  background: var(--accent3);
-  border: none;
+
+.container-navi a{
+  text-decoration: none;
+  color: var(--primary);
 }
 
-#moodle:hover {
-  background: var(--background);
-  outline: 2px solid var(--accent3);
+.container-navi a:hover {
+  text-decoration: underline;
 }
-
-#github {
-  background: var(--accent2);
-  border: none;
-}
-
-#github:hover {
-  background: var(--background);
-  outline: 2px solid var(--accent2);
-}
-
-#mail {
-  background: var(--accent1);
-  border: none;
-}
-
-#mail:hover {
-  background: var(--background);
-  outline: 2px solid var(--accent1);
-} */
 
 /* .link-container {
 } */
 
 /* styling for the links in the different sections */
-.link-container a{
+.link-container a {
   margin-right: 50px;
   text-decoration: none;
   color: var(--primary);

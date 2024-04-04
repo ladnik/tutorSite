@@ -1,19 +1,32 @@
 /* styling for container on top */
 .container-top {
     display: flex;
+    flex-direction: column;
+}
+
+/* containing header top*/
+.container-top-top {
+    display: flex;
+    flex-direction: row;
 }
 
 /* containing heading */
-.container-top-left {
+.container-top-top-left {
     width: 90%;
     /* justify-content: center;
     align-items: center; */
 }
 
 /* containing dark mode button */
-.container-top-right {
+.container-top-top-right {
     display: flex;
     /* justify-content: center; */
+    align-items: center;
+}
+
+/* containing header bottom */
+.container-top-bottom {
+    display: flex;
     align-items: center;
 }
 
@@ -37,8 +50,6 @@
     /* width: 25%; */
     height: 20vh;
 }
-
-
 
 /* styling for the footer */
 .container-bottom {

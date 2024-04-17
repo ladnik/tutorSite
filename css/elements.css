@@ -50,7 +50,6 @@
 }
 
 input:checked+.slider:before
-
 /* , .slider.checked:before */
   {
   transform: translateX(var(--dark_mode_btn_radius));
@@ -82,7 +81,7 @@ input:checked+.slider:before
 } */
 
 
-.container-navi a{
+.container-navi a {
   text-decoration: none;
   color: var(--primary);
 }

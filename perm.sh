@@ -7,6 +7,7 @@ find stuff -exec chmod o-rwx {} \;
 chmod o+rx script.js
 chmod o+rx css
 chmod o+rx stuff
+chmod o+rx index.html
 
 # Set permissions for folders containing all files for one page, and set permissions for the page itself
 for page in "${prefixes[@]}"; do

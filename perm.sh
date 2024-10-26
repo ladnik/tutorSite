@@ -1,6 +1,7 @@
 #!/bin/bash
 week=$1
-prefixes=("era" "gra" "era2")
+prefixes=("era" "era2")
+available=("gra")
 types=("html" "pdf" "tex" "csv" "S" "circ" "c" "asm")
 
 find stuff -exec chmod o-rwx {} \;
@@ -8,6 +9,7 @@ chmod o+rx script.js
 chmod o+rx css
 chmod o+rx stuff
 chmod o+rx index.html
+chmod o+rx assets/*
 
 # Set permissions for folders containing all files for one page, and set permissions for the page itself
 for page in "${prefixes[@]}"; do
@@ -30,6 +32,16 @@ for i in $(seq 1 $week); do
             find stuff -type f -name "${prefix}*${week_pad}*.${type}" -exec chmod o+rx {} \;
         done
     done
+done
+
+# Unset permission for this weeks notes - they shouldn't be available
+echo "Removing permission for most recent writeup"
+week_pad=$(printf "%02d" $week)
+find stuff -type f -name "*${week_pad}*_clean.pdf" -exec chmod o-rx {} \;
+
+# Set permissions for modules that are not taught this semester
+for av in "${available[@]}"; do
+   chmod -R o+rx stuff/$av
 done
 
 # Set permissions for data filed under "other"

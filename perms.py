@@ -4,7 +4,7 @@ import subprocess
 import re
 
 REGEXTYPE = "sed"
-WEEK = 6
+WEEK = 7
 
 allowlist = [
     "\.",
@@ -24,9 +24,9 @@ allowlist = [
     ".*/stuff/era2\?/era2\?_tutor0[1-"+str(WEEK-1)+"]_clean\.pdf",  # writeups up to week n-1
     ".*/stuff/era2\?/era2\?_tutor10_clean\.pdf",                    # additional writeups
     ".*/stuff/era2\?/era2\?_quiz_w0[1-"+str(WEEK-1)+"].*",          # all quizzes up to week n-1
-    ".*/stuff/era2\?/w0[1-"+str(WEEK-1)+"]_code",                   # all code dirs up to week n-1
+    ".*/stuff/era2\?/w0[1-"+str(WEEK-1)+"]_code/*",                   # all code dirs up to week n-1
     ".*/stuff/era2\?/w0[1-"+str(WEEK-1)+"]_code/.*",
-    ".*/stuff/era2\?/w0[1-"+str(WEEK-1)+"]_circuits",               # all circuit dirs up to week n-1
+    ".*/stuff/era2\?/w0[1-"+str(WEEK-1)+"]_circuits/*",               # all circuit dirs up to week n-1
     ".*/stuff/era2\?/w0[1-"+str(WEEK-1)+"]_circuits/.*"        
     
     ".*/stuff/gra/*",  

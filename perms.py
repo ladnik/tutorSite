@@ -27,7 +27,7 @@ allowlist = [
     ".*/stuff/era2\?/w0[1-"+str(WEEK-1)+"]_code/*",                   # all code dirs up to week n-1
     ".*/stuff/era2\?/w0[1-"+str(WEEK-1)+"]_code/.*",
     ".*/stuff/era2\?/w0[1-"+str(WEEK-1)+"]_circuits/*",               # all circuit dirs up to week n-1
-    ".*/stuff/era2\?/w0[1-"+str(WEEK-1)+"]_circuits/.*"        
+    ".*/stuff/era2\?/w0[1-"+str(WEEK-1)+"]_circuits/.*" ,       
     
     ".*/stuff/gra/*",  
     ".*/stuff/gra/.*",      # gra files
@@ -41,8 +41,11 @@ denylist = [
     ".*/README.md",
     ".*/perm\.sh",
     ".*/perms\.py",
-    ".*/era2\?/.*",
-    ".*/gra/.*"
+    
+    ".*/stuff/era/era_slides_w0"+str(WEEK)+".*",                   # ordering between era and era2 changed
+    ".*/stuff/era/era_tutor0"+str(WEEK-1)+"_clean\.pdf",
+    ".*/stuff/era/w0"+str(WEEK-1)+"_code/.*",
+    ".*/stuff/era/w0"+str(WEEK-1)+"_circuits/.*"
     ]
 
 allowperms = "o+rx"
@@ -56,15 +59,15 @@ def main():
     print("Removing other write permissions for all files")
     cmd =  ["find", ".", "-exec", "chmod", "o-w",  "{}", ";"]
     subprocess.run(cmd)
-    
-    print(f"Setting permissions for objects in denylist: {denyperms}")
-    for regobj in denylist:
-        cmd =  ["find", ".", "-regextype", REGEXTYPE, "-regex", regobj, "-exec", "chmod", denyperms,  "{}", ";"]
-        subprocess.run(cmd)
-    
+
     print(f"Setting permissions for objects in allowlist: {allowperms}")
     for regobj in allowlist:
         cmd =  ["find", ".", "-regextype", REGEXTYPE, "-regex", regobj, "-exec", "chmod", allowperms,  "{}", ";"]
+        subprocess.run(cmd)
+
+    print(f"Setting permissions for objects in denylist: {denyperms}")
+    for regobj in denylist:
+        cmd =  ["find", ".", "-regextype", REGEXTYPE, "-regex", regobj, "-exec", "chmod", denyperms,  "{}", ";"]
         subprocess.run(cmd)
 
     print("Done!")

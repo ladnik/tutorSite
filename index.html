@@ -5,107 +5,184 @@ regarding my tutorial in computer architecture @ TUM
 Inspired by https://home.in.tum.de/~spechto/-->
 
 <html>
+  <head>
+    <title>ladnik</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/containers.css" />
+    <link rel="stylesheet" href="css/elements.css" />
+    <script src="script.js" async></script>
+  </head>
 
-<head>
-  <title>ladnik</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/containers.css" />
-  <link rel="stylesheet" href="css/elements.css" />
-  <script src="script.js" async></script>
-</head>
-
-<body>
-  <div class="container-top">
-    <div class="container-top-left">
-      <h1>ERA-Tutorium <wbr />WiSe 2024/25</h1>
-    </div>
-    <div class="container-top-right">
-      <div class="theme-switch" id="dark-mode-toggle">
-        <label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label>
+  <body>
+    <div class="container-top">
+      <div class="container-top-left">
+        <h1>ERA-Tutorium <wbr />WiSe 2024/25</h1>
+      </div>
+      <div class="container-top-right">
+        <div class="theme-switch" id="dark-mode-toggle">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
       </div>
     </div>
-  </div>
 
-  <hr />
-  <span style="font-size: var(--font_text);">
-    <span style="font-weight: bold;"> Zeitplan/Raum:</span>
-    Donnerstag 16:00 s.t. im <a href="https://nav.tum.de/room/5608.EG.038">MI 00.08.038</a>,
-    Freitag 15:00 s.t. im <a href="https://nav.tum.de/room/5606.01.020">MI 01.06.020</a>
-  </span>
-  <hr />
-  <br />
-  <br />
+    <hr />
+    <span style="font-size: var(--font_text)">
+      <span style="font-weight: bold"> Zeitplan/Raum:</span>
+      Donnerstag 16:00 s.t. im
+      <a href="https://nav.tum.de/room/5608.EG.038">MI 00.08.038</a>, Freitag
+      15:00 s.t. im
+      <a href="https://nav.tum.de/room/5606.01.020">MI 01.06.020</a>
+    </span>
+    <hr />
+    <br />
+    <br />
 
-  <div class="container-center">
-    <div class="container-center-left">
-      <!-- <h2>📘<span style="text-decoration: underline">Notizen</span></h2> -->
-      <h2>Notizen</h2>
-      <div class="link-container">
-        <table>
-          <tr>
-            <td><a href="https://home.in.tum.de/~ladu/stuff/era2/era2_slides_w01.pdf">W01: Zahlensysteme</a></td>
-	    <td><a href="https://home.in.tum.de/~ladu/stuff/era2/era2_tutor01_clean.pdf">W01: Notizen</a></td>
-          </tr>
-	  <tr>
-            <td><a href="https://home.in.tum.de/~ladu/stuff/era2/era2_slides_w02.pdf">W02: Einführung RISC-V</a></td>
-	    <td><a href="https://home.in.tum.de/~ladu/stuff/era2/era2_tutor02_clean.pdf">W02: Notizen</a></td>
-          </tr>
-	  <tr>
-            <td><a href="https://home.in.tum.de/~ladu/stuff/era2/era2_slides_w03.pdf">W03: Sprünge und Pointer</a></td>
-	    <td><a href="https://home.in.tum.de/~ladu/stuff/era2/era2_tutor03_clean.pdf">W03: Notizen</a></td>
-            <td><a href="https://home.in.tum.de/~ladu/stuff/era2/w03_code/">W03: Code aus der Übung</a></td>
-	  </tr>
-	  <tr>
-            <td><a href="https://home.in.tum.de/~ladu/stuff/era2/era2_slides_w04.pdf">W04: Rekursion und Calling Convention</a></td>
-	    <td><a href="https://home.in.tum.de/~ladu/stuff/era2/era2_tutor04_clean.pdf">W04: Notizen</a></td>
-	    <td><a href="https://home.in.tum.de/~ladu/stuff/era2/w04_code/">W04: Code aus der Übung</a></td>
-	  </tr>
-	  <tr>
-            <td><a href="https://home.in.tum.de/~ladu/stuff/era2/era2_slides_w05.pdf">W05: Caches</a></td>
-	    <td><a href="https://home.in.tum.de/~ladu/stuff/era2/era2_tutor05_clean.pdf">W05: Notizen</a></td>
-	  </tr>
-	  <tr>
-            <td><a href="https://home.in.tum.de/~ladu/stuff/era2/era2_slides_w06.pdf">W06: Kombinatorische Schaltungen</a></td>
-	    <td><a href="https://home.in.tum.de/~ladu/stuff/era2/era2_tutor06_clean.pdf">W06: Notizen</a></td>
-	    <td><a href="https://home.in.tum.de/~ladu/stuff/era2/w06_circuits/">W06: Schaltungen aus der Übung</a></td>
-	  </tr>
-	  <tr>
-            <td><a href="https://home.in.tum.de/~ladu/stuff/era2/era2_slides_w07.pdf">W07: Sequentielle Schaltungen</a></td>
-	    <!--<td><a href="https://home.in.tum.de/~ladu/stuff/era2/era2_tutor06_clean.pdf">W06: Notizen</a></td>
+    <div class="container-center">
+      <div class="container-center-left">
+        <!-- <h2>📘<span style="text-decoration: underline">Notizen</span></h2> -->
+        <h2>Notizen</h2>
+        <div class="link-container">
+          <table>
+            <tr>
+              <td>
+                <a
+                  href="https://home.in.tum.de/~ladu/stuff/era2/era2_slides_w01.pdf"
+                  >W01: Zahlensysteme</a
+                >
+              </td>
+              <td>
+                <a
+                  href="https://home.in.tum.de/~ladu/stuff/era2/era2_tutor01_clean.pdf"
+                  >W01: Notizen</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://home.in.tum.de/~ladu/stuff/era2/era2_slides_w02.pdf"
+                  >W02: Einführung RISC-V</a
+                >
+              </td>
+              <td>
+                <a
+                  href="https://home.in.tum.de/~ladu/stuff/era2/era2_tutor02_clean.pdf"
+                  >W02: Notizen</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://home.in.tum.de/~ladu/stuff/era2/era2_slides_w03.pdf"
+                  >W03: Sprünge und Pointer</a
+                >
+              </td>
+              <td>
+                <a
+                  href="https://home.in.tum.de/~ladu/stuff/era2/era2_tutor03_clean.pdf"
+                  >W03: Notizen</a
+                >
+              </td>
+              <td>
+                <a href="https://home.in.tum.de/~ladu/stuff/era2/w03_code/"
+                  >W03: Code aus der Übung</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://home.in.tum.de/~ladu/stuff/era2/era2_slides_w04.pdf"
+                  >W04: Rekursion und Calling Convention</a
+                >
+              </td>
+              <td>
+                <a
+                  href="https://home.in.tum.de/~ladu/stuff/era2/era2_tutor04_clean.pdf"
+                  >W04: Notizen</a
+                >
+              </td>
+              <td>
+                <a href="https://home.in.tum.de/~ladu/stuff/era2/w04_code/"
+                  >W04: Code aus der Übung</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://home.in.tum.de/~ladu/stuff/era2/era2_slides_w05.pdf"
+                  >W05: Caches</a
+                >
+              </td>
+              <td>
+                <a
+                  href="https://home.in.tum.de/~ladu/stuff/era2/era2_tutor05_clean.pdf"
+                  >W05: Notizen</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://home.in.tum.de/~ladu/stuff/era2/era2_slides_w06.pdf"
+                  >W06: Kombinatorische Schaltungen</a
+                >
+              </td>
+              <td>
+                <a
+                  href="https://home.in.tum.de/~ladu/stuff/era2/era2_tutor06_clean.pdf"
+                  >W06: Notizen</a
+                >
+              </td>
+              <td>
+                <a href="https://home.in.tum.de/~ladu/stuff/era2/w06_circuits/"
+                  >W06: Schaltungen aus der Übung</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://home.in.tum.de/~ladu/stuff/era2/era2_slides_w07.pdf"
+                  >W07: Sequentielle Schaltungen</a
+                >
+              </td>
+              <!--<td><a href="https://home.in.tum.de/~ladu/stuff/era2/era2_tutor06_clean.pdf">W06: Notizen</a></td>
 	    <td><a href="https://home.in.tum.de/~ladu/stuff/era2/w06_circuits/">W06: Schaltungen aus der Übung</a></td>-->
-	  </tr>
-
-	</table>
-	<br />
-      </div>
-      <!--<h2>📌 <span style="text-decoration: underline">sonstige Unterlagen</span></h2> -->
-      <h2>sonstige Unterlagen</h2>
-      <div class="link-container">
-        <a href="https://forms.gle/c1LQY26yK7aHXr52A">Feedback</a>
-        <!--<a href="https://forms.gle/qarVBrfcJyFLhgxa8">kurzes Feedback</a>
+            </tr>
+          </table>
+          <br />
+        </div>
+        <!--<h2>📌 <span style="text-decoration: underline">sonstige Unterlagen</span></h2> -->
+        <h2>sonstige Unterlagen</h2>
+        <div class="link-container">
+          <a href="https://forms.gle/c1LQY26yK7aHXr52A">Feedback</a>
+          <!--<a href="https://forms.gle/qarVBrfcJyFLhgxa8">kurzes Feedback</a>
         <a href="https://home.in.tum.de/~ladu/stuff/gra/bn_deck.txt">mein Anki-Deck</a>-->
-        <p>
-        </p>
+          <p></p>
+        </div>
       </div>
+
+      <div class="container-center-right">
+        <div class="popcat"></div>
+      </div>
+      <div style="clear: both"></div>
     </div>
 
-    <div class="container-center-right">
-      <div class="popcat"></div>
+    <div class="container-bottom">
+      <a href="gra.html" id="sem-navigation">🡐 GRA SoSe 24</a>
+      <a href="https://www.moodle.tum.de/my/" id="moodle">Moodle </a>
+      <a href="https://github.com/ladnik/tutorSite/issues" id="github"
+        >GitHub
+      </a>
+      <a href="assets/mail" id="mail">Mail </a>
     </div>
-    <div style="clear: both"></div>
-  </div>
-
-  <div class="container-bottom">
-    <a href="gra.html" id="sem-navigation">🡐 GRA SoSe 24</a>
-    <a href="https://www.moodle.tum.de/my/" id="moodle">Moodle </a>
-    <a href="https://github.com/ladnik/tutorSite/issues" id="github">GitHub </a>
-    <a href="assets/mail" id="mail">Mail </a>
-  </div>
-</body>
-
+  </body>
 </html>

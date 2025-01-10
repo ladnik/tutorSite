@@ -1,21 +1,21 @@
 /* styling for container on top */
 .container-top {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 /* containing heading */
 .container-top-left {
-    width: 90%;
-    /* justify-content: center;
+  width: 90%;
+  /* justify-content: center;
     align-items: center; */
 }
 
 /* containing dark mode button */
 .container-top-right {
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 /* containing header bottom */
@@ -24,33 +24,32 @@
     align-items: center;
 } */
 
-
 /* styling for main container */
 .container-center {
-    display: flex;
-    /* change this to row for split containers left/right*/
-    flex-direction: column;
-    min-height: 55vh;
+  display: flex;
+  /* change this to row for split containers left/right*/
+  flex-direction: column;
+  min-height: 55vh;
 }
 
 /* styling for left container */
 .container-center-left {
-    /* width: 75%; */
-    /* min-height: 55vh; */
+  /* width: 75%; */
+  /* min-height: 55vh; */
 }
 
 /* styling for right container */
 .container-center-right {
-    /* width: 25%; */
-    height: 20vh;
+  /* width: 25%; */
+  height: 20vh;
 }
 
 /* styling for the footer */
 .container-bottom {
-    /* position: fixed;
+  /* position: fixed;
     bottom: 0; */
-    width: var(--body_width);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /*width: var(--body_width);*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

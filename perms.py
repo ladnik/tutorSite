@@ -4,7 +4,7 @@ import subprocess
 import re
 
 REGEXTYPE = "sed"
-WEEK = 7
+WEEK = 11
 
 allowlist = [
     "\.",
@@ -20,15 +20,19 @@ allowlist = [
     ".*/stuff/era/resources/.*",
     #".*/stuff/era/era_slides_w\(0[1-9]\|1[0-4]\).*"   
     ".*/stuff/era2\?/era2\?_slides_w0[1-"+str(WEEK)+"].*",          # all slides + texs up to week n
-    ".*/stuff/era2\?/era2\?_slides_w10.*",                          # additional slides + texs
+    ".*/stuff/era2\?/era2\?_slides_w1[0-"+str(WEEK%10)+"].*",          # all slides + texs up to week n
+    ".*/stuff/era2\?/era2\?_slides_w13.*",                          # additional slides + texs
     ".*/stuff/era2\?/era2\?_tutor0[1-"+str(WEEK-1)+"]_clean\.pdf",  # writeups up to week n-1
-    ".*/stuff/era2\?/era2\?_tutor10_clean\.pdf",                    # additional writeups
+    ".*/stuff/era2\?/era2\?_tutor1[0-"+str((WEEK-1)%10)+"]_clean\.pdf",  # writeups up to week n-1
+    ".*/stuff/era2\?/era2\?_tutor13_clean\.pdf",                    # additional writeups
     ".*/stuff/era2\?/era2\?_quiz_w0[1-"+str(WEEK-1)+"].*",          # all quizzes up to week n-1
     ".*/stuff/era2\?/w0[1-"+str(WEEK-1)+"]_code/*",                   # all code dirs up to week n-1
     ".*/stuff/era2\?/w0[1-"+str(WEEK-1)+"]_code/.*",
     ".*/stuff/era2\?/w0[1-"+str(WEEK-1)+"]_circuits/*",               # all circuit dirs up to week n-1
     ".*/stuff/era2\?/w0[1-"+str(WEEK-1)+"]_circuits/.*" ,       
-    
+    ".*/stuff/era2\?/w0[1-"+str(WEEK)+"]_templates/*",              # all template dirs up to week n
+    ".*/stuff/era2\?/w0[1-"+str(WEEK)+"]_templates/.*" ,  
+
     ".*/stuff/gra/*",  
     ".*/stuff/gra/.*",      # gra files
     
@@ -45,7 +49,10 @@ denylist = [
     ".*/stuff/era/era_slides_w0"+str(WEEK)+".*",                   # ordering between era and era2 changed
     ".*/stuff/era/era_tutor0"+str(WEEK-1)+"_clean\.pdf",
     ".*/stuff/era/w0"+str(WEEK-1)+"_code/.*",
-    ".*/stuff/era/w0"+str(WEEK-1)+"_circuits/.*"
+    ".*/stuff/era/w0"+str(WEEK-1)+"_circuits/.*",
+
+    ".*/stuff/era/.*w09.*",
+    ".*/stuff/era/.*w11.*"
     ]
 
 allowperms = "o+rx"

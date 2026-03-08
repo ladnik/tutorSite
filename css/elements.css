@@ -87,8 +87,9 @@ input:checked+.slider:before
   text-decoration: underline;
 }
 
-/* .link-container {
-} */
+.link-container table {
+      word-break: break-word;
+}
 
 /* styling for the links in the different sections */
 .link-container a {

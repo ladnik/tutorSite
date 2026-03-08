@@ -81,8 +81,15 @@ a {
 }
 
 /* styling for the main content table */
-th,
-td {
-  text-align: left;
-  white-space: normal; /* Allow text wrapping */
+@media (max-width: 450px) {
+  table,
+  tbody,
+  thead,
+  tr,
+  td,
+  th {
+    display: block;
+    text-align: left;
+    white-space: normal;
+  }
 }
